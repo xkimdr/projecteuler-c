@@ -1,0 +1,53 @@
+BasedOnStyle: LLVM
+
+# General Formatting
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+ColumnLimit: 80
+
+# Braces and Blocks
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  BeforeCatch: true
+  BeforeElse: true
+  BeforeWhile: true
+  AfterControlStatement: true
+  IndentBraces: false
+
+# Namespace
+NamespaceIndentation: All
+
+# Function and Block Formatting
+AllowShortBlocksOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: All
+IndentCaseLabels: true
+
+# Alignments
+AlignAfterOpenBracket: Align
+AlignOperands: Align
+AlignTrailingComments: true
+PointerAlignment: Left
+
+# Spacing
+SpaceAfterCStyleCast: true
+SpaceAfterTemplateKeyword: true
+SpacesBeforeTrailingComments: 2
+
+# Includes
+IncludeBlocks: Preserve
+IncludeCategories:
+  - Regex:           '^<.*>'
+    Priority:        1
+  - Regex:           '^"'
+    Priority:        2
+SortIncludes: true
+
+# Binary Operators
+BreakBeforeBinaryOperators: NonAssignment
